@@ -1,0 +1,23 @@
+New Stuff
+
+Terraform
+* use s3 backend module to deploy backend resources. Only has to be done once per account in the main.tf file
+* a module is a container for multiple resources that are used together
+* arn is Amazon Resource Name on an existing ecs cluster
+* to upgrade, do setup first and then app. to destroy, vice versa
+
+cron
+* way to run things on a schedule on Linux
+* https://crontab.guru/ 
+
+Tools
+* magic wormhole to send files securely
+
+ESM v CJS
+CJS has require, exports, Object.assign--more flexible but opens holds
+imports are async, require is sync
+ESM uses require and can sometimes use common, used in browser
+
+npm link allows you to test local library changes!
+
+biome--linter 

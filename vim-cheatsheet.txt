@@ -1,0 +1,53 @@
+MY SUPER COOL VIM CHEATSHEET
+
+Basics
+------------------------------------------
+hl--left, right
+jk-down, up
+	examples: 6h=6 characters to left
+	100j=100 lines down
+
+gg-top of page
+G-end of page
+$-end of line
+a-to go to end of char (instead of i for before)
+^-start of current line
+CtrlC/Esc-change mode
+E-move to end of word
+W-move to start of word
+B-count words backward
+x-to cut my visual block code
+p-to paste
+dd-delete a line
+
+Modes
+-----------------------------------
+Insert (i)
+Normal/Command
+Visual (v)
+Visual block
+(a) for going after a char (or word?)
+
+Deletion
+---------------------------
+Go into visual mode
+use d to delete
+use x to cut
+
+Searching
+------------------------------------
+/ allows you to search -> then hit Enter
+n is next found occurence
+N is previous occurence
+In Normal mode for word under cursor, *=search forward, #=search backword
+
+Editing Multiple Files
+----------------------------------
+nvim file1.txt file2.txt file3.txt
+:edit file2.txt within file1.txt
+buffers which I don't want to get into yet
+split screen is :sp <filename>
+VIM
+
+Intro
+- Bram Moolenar wrote all of Vim and basically all of the commits in Vim has his name on it--hence NeoVim-> 

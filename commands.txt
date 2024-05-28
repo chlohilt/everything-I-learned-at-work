@@ -1,0 +1,32 @@
+IMPORTANT COMMAND LINE COMMANDS TO REMEMBER
+
+netstat -ano | findstr :8080 
+
+taskkill /PID 28764 /F
+
+curl -v http://...
+
+curl -X GET "localhost:3000/tasks" | npx json
+
+curl -X POST "localhost:3000/tasks" -d "{\"title\": \"Create a new task\"}" -H "Content-Type: application/json" | npx json
+
+npm run lint -- --fix (to force lint fixes)
+
+tfvm is terraform version manager
+
+terraform state list shows what terraform is tracking
+
+terraform state rm ____ will remove an item from being tracked
+
+Terraform
+validate checks syntax
+recursive with fmt can fix issues
+diff for what needs to change
+force-unlock 
+get installs or upgrades remote Terraform modules - init already does this
+output to get specific output/all
+show shows the current state of the plan
+state list shows you everything it's keeping track of
+state rm will stop managing a certain thing but not destroy it
+taint (also has untaint) - on next apply, destroy and recreate
+moved block will try to move on next apply

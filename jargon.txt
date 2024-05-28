@@ -1,0 +1,47 @@
+Jargon
+
+BFF = backend for frontend
+
+RFC = request for comments, used for major changes
+
+ADR = architectural decision record
+
+Redis tag = custom labels you can apply to database clusters
+
+Redis = open source, key-value database built with an in-memory design that emphasizes speed
+
+non-limited change window = 
+
+RPC = program that listens for incoming RPC requests and provides the requested services
+
+UDP = User Datagram Protocol, connectionless communication protocol for transporting packets across networks
+
+MDCB = multi data center bridge (tyk)
+
+NFC = Near field communication
+
+Keystroke logger = user's keystrokes are monitored and recorded, used for hacking
+
+Rainbow table attack = use precomputed table for caching the outputs of a cryptographic has function
+
+credential stuffing attacks = find username and password, use that everywhere to try to hack into accounts
+
+ARM64 = 64 bit extension of ARM architecture family
+
+ARM = family of architectures for computer processors
+
+Alpine = rugged, minimal tool for composing behavior directly in your markup. like jQuery for the modern web
+
+Javascript runner = tool/framework that facilitates the automation of repetitive tasks in a JavaScript project like code compilation
+
+Amazon Cloud watch = service used for monitoring and observing resources in real time, holds logs
+
+Humio = helps achieve real-time observability of all relevant structured and unstructured production data without disruption. CloudWatch logs are sometimes in there
+
+DDAS (data dependency algebras) = turn dependencies into explicit, programmable entities, that are more fundamental than general dependency analysis. It abstracts how parts of a computation depend on data supplied by other parts at a fine-grained level.
+
+Richardson's maturity level for REST APIs
+
+GraphQL
+
+Leaky abstraction
