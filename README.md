@@ -1,4 +1,4 @@
-#Everything I Learned at my Student Job as a Fullstack Developer
+# Everything I Learned at my Student Job as a Fullstack Developer
 
 Obviously this is not everything but here are some things that I kept in notes to remember and I still go back to sometimes.
 
