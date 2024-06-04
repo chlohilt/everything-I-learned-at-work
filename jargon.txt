@@ -40,8 +40,14 @@ Humio = helps achieve real-time observability of all relevant structured and uns
 
 DDAS (data dependency algebras) = turn dependencies into explicit, programmable entities, that are more fundamental than general dependency analysis. It abstracts how parts of a computation depend on data supplied by other parts at a fine-grained level.
 
-Richardson's maturity level for REST APIs
+Richardson's maturity level for REST APIs = a way to evaluate the design of RESTful APIs
+	Level 0: single URI, single HTTP method
+	Level 1: many URI, single HTTP method
+	Level 2: many URI, multiple HTTP method
+	Level 3: many URI, multiple HTTP methods, resource describes own capabilities, resource describes own interactions
 
-GraphQL
+GraphQL = open-source data query and manipulation language for APIs and a query runtime engine
 
-Leaky abstraction
+Leaky abstraction = a software abstraction that exposes details that it's supposed to hide...not a good abstraction
+
+Conway's law = the structure of software will mirror the organization that built it

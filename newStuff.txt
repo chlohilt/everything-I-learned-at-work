@@ -21,3 +21,10 @@ ESM uses require and can sometimes use common, used in browser
 npm link allows you to test local library changes!
 
 biome--linter 
+
+Docker
+not actually a VM
+containerization tool, allows you to run stuff on local machines
+reproducable, don't need to download everything for each person
+
+Alpine Linux is meant to be minimal with no extra stuff so you can make base image super small
