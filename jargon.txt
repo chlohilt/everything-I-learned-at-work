@@ -51,3 +51,8 @@ GraphQL = open-source data query and manipulation language for APIs and a query 
 Leaky abstraction = a software abstraction that exposes details that it's supposed to hide...not a good abstraction
 
 Conway's law = the structure of software will mirror the organization that built it
+
+flakiness = tests that fail for unclear reasons
+
+database migrations = 
+

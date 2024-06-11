@@ -19,6 +19,10 @@ B-count words backward
 x-to cut my visual block code
 p-to paste
 dd-delete a line
+ctrl b = up a page
+ctrl f = down a page
+ctrl u = 1/2 screen up
+ctrl d = 1/2 screen down
 
 Modes
 -----------------------------------
