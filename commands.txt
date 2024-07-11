@@ -27,6 +27,19 @@ find command
 	find ~/Documents -ls
 4. find by content (example searches for penguin)
 	find ~/Documents -name "*txt" -exec grep -Hi penguin {} \;	
+5. find files by type
+	find ~ -type f
+6. list directories only
+	find ~/Public -type d
+7. limit listing results
+	find ~/Documents -maxdepth 3 -type d
+8. find empty files
+	find ~ -type f -empty
+9. find files by age using -mtime 
+	- -mtime option allows you to limit a search to files older than, but also files newer than, some value times 24
+	find /var/log -iname "*~" -o -iname "*log*" -mtime +30
+10. search a paht
+	find / -type d -name 'img' -ipath "*public_html/example.com*" 
 
 Terraform
 validate checks syntax
