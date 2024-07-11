@@ -109,5 +109,13 @@ ciw = change inside the word (delete current word under cursor and switch to ins
 dip = delete inside paragraph
 viw = select a word
 
+Editing multiple lines
+-------------------------------
+go into visual block mode
+select all lines you'd like to edit
+press 'I'
+put in text needed
+press Esc
+
 Intro
 - Bram Moolenar wrote all of Vim and basically all of the commits in Vim has his name on it--hence NeoVim-> 
