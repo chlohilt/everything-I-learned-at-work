@@ -11,7 +11,9 @@ gg-top of page
 G-end of page
 $-end of line
 a-to go to end of char (instead of i for before)
-^-start of current line
+^-start of current line with non-blank character
+0-start of current line
+%-move to matching bracket when cursor is already on a bracket (), [], {}
 CtrlC/Esc-change mode
 E-move to end of word
 W-move to start of word
@@ -23,6 +25,41 @@ ctrl b = up a page
 ctrl f = down a page
 ctrl u = 1/2 screen up
 ctrl d = 1/2 screen down
+ctrl y = scroll up
+ctrl e = scroll the window downwards
+u = undo last edit
+A = insert content after everything (move cursor to end of the line and enter insert mode)
+o = open a new line below the current one and move into insert mode
+O = open a new line above the current one  and move into insert mode
+f<char> = find char after cursor
+F<char> = find char before cursor
+^^ after using one of the f's, you can move vertically to next matching char with ; or last matching char with ,
+
+CTRL -r = redo
+CTRL-@		Insert previously inserted text and stop insert.
+
+						*i_CTRL-A*
+CTRL-A		Insert previously inserted text.
+
+						*i_CTRL-H* *i_<BS>* *i_BS*
+<BS> or CTRL-H	Delete the character before the cursor (see |i_backspacing|
+		about joining lines).
+						*i_CTRL-W*
+CTRL-W		Delete the word before the cursor
+						*i_CTRL-U*
+CTRL-U		Delete all entered characters before the cursor in the current
+		line.  If there are no newly entered characters and
+		'backspace' is not empty, delete all characters before the
+		cursor in the current line.
+						*i_CTRL-U-default*
+		By default, sets a new undo point before deleting.
+		|default-mappings|
+						*i_CTRL-J* *i_<NL>*
+<NL> or CTRL-J	Begin new line.
+						*i_CTRL-M* *i_<CR>*
+<CR> or CTRL-M	Begin new line.
+						*i_CTRL-K*
+
 
 Modes
 -----------------------------------
@@ -57,6 +94,20 @@ Key mapping
 nnoremap = command to create a non-recursive mapping in normal mode (mapping will not call itself if defined in its own mapping sequence)
 <silent> = suppresses command output that appears at the bottom of the screen when mapped keys are pressed
 <cr> = carriage return and simulates pressing the Enter key
+
+Operators 
+---------------------------------------
+d = delete
+c = change
+y = yank (copy)
+p = put (paste)
+
+Text Objects
+--------------------------------
+diw = delete inside the worde (delete current word under cursor)
+ciw = change inside the word (delete current word under cursor and switch to insert mode)
+dip = delete inside paragraph
+viw = select a word
 
 Intro
 - Bram Moolenar wrote all of Vim and basically all of the commits in Vim has his name on it--hence NeoVim-> 
