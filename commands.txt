@@ -18,6 +18,16 @@ terraform state list shows what terraform is tracking
 
 terraform state rm ____ will remove an item from being tracked
 
+find command
+1. find by name
+	find / -name "name.txt"
+2. find by approximate name
+	find / -iname "*name*txt"
+3. find everything recursively
+	find ~/Documents -ls
+4. find by content (example searches for penguin)
+	find ~/Documents -name "*txt" -exec grep -Hi penguin {} \;	
+
 Terraform
 validate checks syntax
 recursive with fmt can fix issues
