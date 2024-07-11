@@ -117,5 +117,16 @@ press 'I'
 put in text needed
 press Esc
 
+Buffers
+----------------------------------
+buffer management :b
+jump/change lists (ctrl i and g;)
+alternate file ^
+
+workflow (from StackOverflow that I will try):
+use :e to open a buffer
+use :e to open another file--to toggle between two, use :sp and :vsp to open it in a separate window
+repeat
+
 Intro
 - Bram Moolenar wrote all of Vim and basically all of the commits in Vim has his name on it--hence NeoVim-> 
