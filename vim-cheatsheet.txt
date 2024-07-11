@@ -51,7 +51,12 @@ nvim file1.txt file2.txt file3.txt
 :edit file2.txt within file1.txt
 buffers which I don't want to get into yet
 split screen is :sp <filename>
-VIM
+
+Key mapping
+---------------------------------------
+nnoremap = command to create a non-recursive mapping in normal mode (mapping will not call itself if defined in its own mapping sequence)
+<silent> = suppresses command output that appears at the bottom of the screen when mapped keys are pressed
+<cr> = carriage return and simulates pressing the Enter key
 
 Intro
 - Bram Moolenar wrote all of Vim and basically all of the commits in Vim has his name on it--hence NeoVim-> 
