@@ -128,5 +128,10 @@ use :e to open a buffer
 use :e to open another file--to toggle between two, use :sp and :vsp to open it in a separate window
 repeat
 
+Plugins
+------------------------------------
+Use :PlugInstall to install all plugins for VimPlug
+use syntax Plug 'nameOfPlugin'
+
 Intro
 - Bram Moolenar wrote all of Vim and basically all of the commits in Vim has his name on it--hence NeoVim-> 
