@@ -128,6 +128,8 @@ use :e to open a buffer
 use :e to open another file--to toggle between two, use :sp and :vsp to open it in a separate window
 repeat
 
+to close buffer without closing vsp, do bp|bd # (go to previous buffer, then delete buffer just moved away from)
+
 Plugins
 ------------------------------------
 Use :PlugInstall to install all plugins for VimPlug
