@@ -54,5 +54,12 @@ Conway's law = the structure of software will mirror the organization that built
 
 flakiness = tests that fail for unclear reasons
 
-database migrations = 
+database migrations = process fo transferring data from one data storage system to another and also between data formats and applications. 6 types: storage migration, database migration, application migration, cloud migration, business process migration, data center migration
 
+optimistic/pessimistic concurrency=no locks-system should work/locks-you need training wheels
+
+concurrency = two or more actors are touching the same resource at the same time
+
+contention = competition/conflict over shared resources between multiple processes or devices
+
+ACID properties = atomicity, consistency, isolation, durability

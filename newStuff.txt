@@ -28,3 +28,5 @@ containerization tool, allows you to run stuff on local machines
 reproducable, don't need to download everything for each person
 
 Alpine Linux is meant to be minimal with no extra stuff so you can make base image super small
+
+when you need to code defensively, you need to fix your data (maybe locks, pessimistic concurrency)
