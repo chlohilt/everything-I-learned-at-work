@@ -135,5 +135,12 @@ Plugins
 Use :PlugInstall to install all plugins for VimPlug
 use syntax Plug 'nameOfPlugin'
 
+Find and Replace
+---------------------------------------
+basic search and replace = :%s/foo/bar/g
+search and replace in range oflines :startline,endline s/pattern/replacement/g
+case insensitive search and replace by appending i flag like this :%s/foo/bar/gi
+search and replace with confirmation before each substitution, use c flag like this :%s/foo/bar/gc
+
 Intro
 - Bram Moolenar wrote all of Vim and basically all of the commits in Vim has his name on it--hence NeoVim-> 
