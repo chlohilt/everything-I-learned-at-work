@@ -78,6 +78,7 @@ use x to cut
 Searching
 ------------------------------------
 / allows you to search -> then hit Enter
+:noh = to clear highlights after search
 n is next found occurence
 N is previous occurence
 In Normal mode for word under cursor, *=search forward, #=search backword
@@ -86,8 +87,8 @@ Editing Multiple Files
 ----------------------------------
 nvim file1.txt file2.txt file3.txt
 :edit file2.txt within file1.txt
-buffers which I don't want to get into yet
 split screen is :sp <filename>
+vertical split screen is :vsp
 
 Key mapping
 ---------------------------------------
@@ -120,8 +121,20 @@ press Esc
 Buffers
 ----------------------------------
 buffer management :b
-jump/change lists (ctrl i and g;)
-alternate file ^
+:bnext or :bn = move to next buffer
+:bprevious or :bp = move to prev buffer
+:bfirst or :bf = move to first buffer
+:blast or :bl = move to last buffer
+CTRL-^ = switch to the alternate buffer
+:bufdo <command> = apply a command on all buffers
+
+to create a buffer: opening a window->buffer will be created automatically
+:badd <filename> = add filename to buffer list
+
+to delete a buffer: 
+:bdelete <ID_or_name>
+:1,10bdeleete = delete all buffers from ID 1-10, inclusive
+:%bdelete = delete all buffers 
 
 workflow (from StackOverflow that I will try):
 use :e to open a buffer
@@ -129,6 +142,14 @@ use :e to open another file--to toggle between two, use :sp and :vsp to open it 
 repeat
 
 to close buffer without closing vsp, do bp|bd # (go to previous buffer, then delete buffer just moved away from)
+
+Vim Windows
+-------------------------------------------
+CTRL-W s = split window horizontally
+CTRL-W v = split window vertically
+CTRL-W n = split current windows horizontally and edit a new file
+CTRL-W ^ = split current with the alternate file (buffer with # indicator in buffer list)
+<bufferID> CTRL-W ^ = split windows with the buffer of ID <bufferID>
 
 Plugins
 ------------------------------------
@@ -141,6 +162,11 @@ basic search and replace = :%s/foo/bar/g
 search and replace in range oflines :startline,endline s/pattern/replacement/g
 case insensitive search and replace by appending i flag like this :%s/foo/bar/gi
 search and replace with confirmation before each substitution, use c flag like this :%s/foo/bar/gc
+
+Put
+-----------------------------
+p = put last thing in register AFTER the cursor
+P = put last thing in register BEFORE the cursor
 
 Intro
 - Bram Moolenar wrote all of Vim and basically all of the commits in Vim has his name on it--hence NeoVim-> 
