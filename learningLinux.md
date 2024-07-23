@@ -27,4 +27,19 @@ alias foobar='ls -la' = creates an alias for a command, this does foobar for ls 
 unalias foobar = undo above
 exit = to exit from the shell
 
+### Standard Out/In/Error
+echo Hello > text.txt = puts Hello into text.txt file, > is a redirection operator
+echo Hello ?? text.txt = puts Hello at the bottom of text.txt file, doesn't allow it to overwrite
+cat < peanuts.txt > banana.txt = gives peanuts.txt as stdin redirection for cat
+stderr prints stuff out to the screen but is a different stream from stdout -> file descriptor for stdin, stdout, stderr is 0,1,2 respectively
+    - to redirect stderr to a file -> ls /fake/directory 2> peanuts.txt
+    - to see both stderr and stdout in file? -> ls /fake/directory > peanuts.txt 2>&1
+    - short cut for above ^^ -> ls /fake/directory &> peanuts.txt
+    - to get rid of stderr messages completely, use special file /dev/null which will discard any input
+
+### Pipe and Tee
+pipe operator (|) lets us get stdout of command and make that stdin to another process 
+`ls -la /etc | less`
+to write the output of command to two different streams, use tee command
+`ls | tee peanuts.txt`
 
