@@ -63,3 +63,5 @@ concurrency = two or more actors are touching the same resource at the same time
 contention = competition/conflict over shared resources between multiple processes or devices
 
 ACID properties = atomicity, consistency, isolation, durability
+
+skeuomorphism = used in GUI design to describe interface objects that mimic real world counterparts in how they appear and/or how user can interact with them -- bell for notifs, recycle bin for garbage, etc.

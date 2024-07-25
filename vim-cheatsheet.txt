@@ -201,6 +201,11 @@ ArgList
 :prev = move to the previous file in the arglist
 :first = move to the first file in the arglist
 
+Terminal
+---------------------------------------
+use :terminal to start terminal
+use Ctrl+\ Ctrl+n to exit
+
 Definitions
 --------------------------------------
 * buffer is the in-mmeory text of a file
