@@ -20,6 +20,9 @@ W-move to start of word
 B-count words backward
 x-to cut my visual block code
 p-to paste
+gM - goes to the middle of the line
+80gM - goes to 80% of the line width
+r-use to replace one character under the cursor
 dd-delete a line
 ctrl b = up a page
 ctrl f = down a page
@@ -27,6 +30,7 @@ ctrl u = 1/2 screen up
 ctrl d = 1/2 screen down
 ctrl y = scroll up
 ctrl e = scroll the window downwards
+ctrl g = shows filename and position in the file
 u = undo last edit
 A = insert content after everything (move cursor to end of the line and enter insert mode)
 o = open a new line below the current one and move into insert mode
@@ -158,8 +162,8 @@ use syntax Plug 'nameOfPlugin'
 
 Find and Replace
 ---------------------------------------
-basic search and replace = :%s/foo/bar/g
-search and replace in range oflines :startline,endline s/pattern/replacement/g
+basic search and replace = :s/foo/bar/g
+search and replace in range oflines :#,#s/pattern/replacement/g
 case insensitive search and replace by appending i flag like this :%s/foo/bar/gi
 search and replace with confirmation before each substitution, use c flag like this :%s/foo/bar/gc
 
@@ -167,6 +171,42 @@ Put
 -----------------------------
 p = put last thing in register AFTER the cursor
 P = put last thing in register BEFORE the cursor
+
+Change
+---------------------------------
+ce = change from cursor to end of word
+c$ = change from cursor to end of line
+
+Execute an External Command
+-----------------------------------
+:! followed by external command to execute that command
+
+Writing to files
+------------------------------------
+:w <filename> to save it to a new file with name filename
+1. use visual selection and choose what lines to put into a file
+2. press : and :'<,'> will appear. add w <filename> to write the selected lines to <filename>
+
+Retrieving and Merging Files 
+-------------------------------------
+to retrieve contents of a file, type :r <filename>
+can also read the output of an external command -- example :r !ls
+
+ArgList
+-------------------------------------
+:args = display arglist
+:argadd = add file to the arglist
+:argdo = execute a command on every file in the arglist
+:next = move to the next file in the arglist
+:prev = move to the previous file in the arglist
+:first = move to the first file in the arglist
+
+Definitions
+--------------------------------------
+* buffer is the in-mmeory text of a file
+* window is a viewport on a buffer
+* tab page is a collection of windows
+* argument list is a container that allows you to organize your open files--stable subset of the buffer list, it stays the same unless you explicity modify it 
 
 Intro
 - Bram Moolenar wrote all of Vim and basically all of the commits in Vim has his name on it--hence NeoVim-> 
