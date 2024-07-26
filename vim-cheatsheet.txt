@@ -213,5 +213,14 @@ Definitions
 * tab page is a collection of windows
 * argument list is a container that allows you to organize your open files--stable subset of the buffer list, it stays the same unless you explicity modify it 
 
+Creating Mappings
+--------------------------------------
+:nmap = new mapping for normal mode
+:imap = new mapping for insert mode
+:xmap = new mapping for visual mode
+:cmap = new mapping for command line mode
+
+for non recursive mappings, add nore, like this: nnoremap or vnoremap
+
 Intro
 - Bram Moolenar wrote all of Vim and basically all of the commits in Vim has his name on it--hence NeoVim-> 
