@@ -78,6 +78,7 @@ Deletion
 Go into visual mode
 use d to delete
 use x to cut
+use dt -> where you want to delete to (dt, = delete till comma)
 
 Searching
 ------------------------------------
