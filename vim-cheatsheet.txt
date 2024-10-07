@@ -127,7 +127,7 @@ Buffers
 ----------------------------------
 buffer management :b
 :bnext or :bn = move to next buffer
-:bprevious or :bp = move to prev buffer
+:bprevious or :bp or :b# = move to prev buffer
 :bfirst or :bf = move to first buffer
 :blast or :bl = move to last buffer
 CTRL-^ = switch to the alternate buffer
@@ -212,6 +212,17 @@ Definitions
 * window is a viewport on a buffer
 * tab page is a collection of windows
 * argument list is a container that allows you to organize your open files--stable subset of the buffer list, it stays the same unless you explicity modify it 
+
+Collapsing
+--------------------------------------
+zc = collapse a fold 
+zo = expand a fold 
+za = toggle fold 
+zM = collapse all folds
+zR = open all folds
+zm = increase fold level (close more folds)
+zr - decrease fold level (open more folds)
+
 
 Intro
 - Bram Moolenar wrote all of Vim and basically all of the commits in Vim has his name on it--hence NeoVim-> 
