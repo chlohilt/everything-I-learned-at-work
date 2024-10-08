@@ -38,6 +38,8 @@ O = open a new line above the current one  and move into insert mode
 f<char> = find char after cursor
 F<char> = find char before cursor
 ^^ after using one of the f's, you can move vertically to next matching char with ; or last matching char with ,
+CTRL-o = move to cursor was before
+CTRL-i = jump back to where you were before you jumped with ctrl o
 
 CTRL -r = redo
 CTRL-@		Insert previously inserted text and stop insert.
